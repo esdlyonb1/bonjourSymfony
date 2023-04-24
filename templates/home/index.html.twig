@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <h1>Coucou {{ prenom }}</h1>
+
+    <form action="{{ path('app_home') }}" method="get">
+        <input type="text" name="prenom" id="">
+        <input type="submit" value="OK">
+    </form>
+
+{% endblock %}
